@@ -1,0 +1,843 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    max-width: 100%;
+}
+.container {
+    width: 1200px;
+    margin: auto;
+}
+section {
+    margin-bottom: 70px;
+}
+header#header {
+    background-color: #7857FE;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 59px;
+    border-bottom: 1px solid #ddd;
+    z-index: 100000;
+}
+.logo p a {
+    font-size: 23px;
+    color: #fff;
+    font-weight: 500;
+}
+.TopBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0px;
+}
+.NavItems ul {
+    display: flex;
+    align-items: center;
+}
+.NavItems ul li {
+    margin-left: 30px;
+}
+.NavItems ul li a {
+    color: #fff;
+}
+.NavItems ul li a:after {
+    content: "";
+    width: 0%;
+    background: #fff;
+    border: 1px solid #fff;
+    display: block;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.NavItems ul li:hover a:after{
+    width: 100%;
+    visibility: visible;   
+}
+section#homeSec {
+    background: #7857FE;
+    margin-top: 59px;
+    border-bottom-right-radius: 190px;
+}
+.home {
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    padding: 65px 0px;
+}
+.homeDetails h1 {
+    font-size: 41px;
+}
+.homeDetails p {
+    font-size: 17px;
+    margin: 15px 0px 25px 0px;
+}
+.buttonCommonDesign {
+    background: #fff;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-family: 'Poppins';
+    border-radius: 25px;
+    margin-right: 20px;
+    transition: .3s;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+}
+
+.buttonCommonDesign:hover {
+    transform: scale(1.08);
+}
+
+.buttonCommonDesign a {
+    color: #7857FE;
+}
+
+button.play {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 19px;
+    background-color: #fff;
+    transition: .3s;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+}
+
+button.play a i {
+    color: #7857FE;
+}
+
+button.play:hover {
+    transform: scale(1.08);
+}
+
+.Buttons {
+    display: flex;
+    align-items: center;
+}
+
+.homeBanner {
+    padding: 0px 180px;
+}
+.homeBanner img{
+    position: relative;
+    animation: slider 1s ease-in-out 0s infinite alternate;
+}
+/* Home Animation */
+@keyframes slider {
+    0%{
+        top: 10px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+
+h3.sectionTitle {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+h3.sectionTitle span {
+    color: #7857FE;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.feature {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0px 0px 4px 1px #efefef;
+    transition: .3s;
+}
+
+.feature i {
+    color: #7857FE;
+    font-size: 31px;
+}
+
+.feature h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0px 10px 0px;
+}
+
+.feature p {
+    color: #747474;
+}
+
+.feature:hover {
+    border: 1px solid #7857FE;
+}
+
+.Fun {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.FunDetails h3 {
+    font-size: 33px;
+}
+
+.FunDetails h3 span {
+    color: #7857FE;
+}
+
+.FunDetails p {
+    margin: 10px 0px 30px 0px;
+}
+
+.activities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.activitiesBox {
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 25px 0px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.activitiesBox h3 {
+    font-size: 28px;
+}
+
+.activitiesBox p {
+    font-size: 13px;
+    margin: 4px 0px;
+}
+
+.color1 {
+    background: #E91E63;
+}
+
+.color2 {
+    background: #F5AE10;
+}
+
+.color3 {
+    background: #09D69C;
+}
+
+.color4 {
+    background: #7857FE;
+}
+
+.FunBanner {
+    padding: 0px 180px;
+}
+
+#FunSection {
+    background: #F7F7F7;
+    padding: 60px 0px;
+}
+
+.screenshorts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.screenshot {
+    padding: 0px 40px;
+}
+
+#DownLoadAppSection{
+    background-image: linear-gradient(#7857feb5, #7857feb5), url(images/download-app-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 57px 0px;
+}
+
+.option {
+    padding: 25px;
+    text-align: center;
+    background: #fff;
+    border-radius: 7px;
+}
+
+.DownloadOptions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.sectionTitlesAnother {
+    font-size: 31px;
+    text-align: center;
+    margin-bottom: 47px;
+}
+
+.sectionTitlesAnother span {
+    color: #fff;
+}
+
+.buttonDesign {
+    background: #7857FE;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-family: 'Poppins';
+    border-radius: 25px;
+    transition: .3s;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+}
+.buttonDesign:hover {
+    transform: scale(1.08);
+}
+
+.buttonDesign a {
+    color: #fff;
+}
+
+.option i {
+    color: #7857FE;
+    font-size: 40px;
+    margin-bottom: 17px;
+}
+
+.option h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.option p {
+    padding: 10px 0px 20px 0px;
+}
+
+.workingSystem {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.perSystem {
+    border: 1px solid transparent;
+    text-align: center;
+    padding: 20px;
+}
+
+.WorkingSerial p {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    background: #7857FE;
+    color: #fff;
+    font-size: 25px;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.perSystem h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 25px 0px 5px 0px;
+}
+
+.priceBoxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.priceBox {
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 4px 1px #efefef;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.priceBox ul {
+    text-align: start;
+    margin-bottom: 35px;
+}
+
+.priceBox h3 {
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 15px;
+}
+
+.priceBox p {
+    font-weight: 700;
+    font-size: 50px;
+    margin: 15px 0px 20px 0px;
+}
+
+.priceBox p span {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.priceBox ul li a {
+    line-height: 30px;
+    font-size: 17px;
+    color: #666;
+    font-weight: 500;
+}
+
+.priceBox ul li {
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 1px;
+    margin-bottom: 15px;
+}
+
+.priceBox ul li a i {
+    color: #7857FE;
+    margin-right: 2px;
+}
+
+.active, .priceBox:hover {
+    border: 1px solid #7857FE;
+}
+
+.GetInTouch {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+#GetInTouchSection {
+    background-color: #F7F7F7;
+    padding: 53px 0px;
+    margin-bottom: 0px;
+}
+
+.GetInTouchDetails h3 {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.infoIcon {
+    border: 1px solid #b19ff7;
+    margin-right: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 10px 12px;
+}
+
+.infoIcon i {
+    font-size: 20px;
+    color: #7857FE;
+}
+
+.infoSingle h4 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.infoSingle p {
+    font-size: 14px;
+    color: #666;
+}
+
+.GetInTouchDetails {
+    margin-right: 35px;
+}
+
+.GetInTouchForm input {
+    display: block;
+    margin-bottom: 16px;
+    width: 100%;
+    padding: 10px 6px;
+    font-size: 16px;
+    font-family: 'Nunito';
+    box-shadow: 0px 0px 4px 1px #efefef;
+    border: 1px solid transparent;
+}
+
+.inline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+}
+
+.GetInTouchForm textarea {
+    width: 100%;
+    resize: none;
+    padding: 6px 6px;
+    font-size: 16px;
+    font-family: 'Nunito';
+    box-shadow: 0px 0px 4px 1px #efefef;
+    border: 1px solid transparent;
+}
+
+.GetInTouchForm textarea:focus {
+    border :1px solid #7857FE
+}
+
+.GetInTouchForm input:focus {
+    border: 1px solid #7857FE;
+}
+
+.GetInTouchForm form {
+    margin-bottom: 10px;
+}
+
+footer#footer {
+    background-color: #7857FE;
+}
+
+.footerDetails {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 21px;
+    padding: 50px 0px;
+}
+
+.footerInfo h4 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 9px;
+}
+
+.footerInfo p {
+    color: #fff;
+    font-size: 15px;
+}
+
+ul.list li a {
+    color: #fff;
+    line-height: 30px;
+}
+
+ul.list li a:hover {
+    text-decoration: underline;
+}
+
+hr#footerUnderline {
+    border: 1px solid #ffffff63;
+}
+
+p#copyrightClame {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+
+
+/* Responsive part */
+
+@media only screen and (max-width : 1220px) {
+    .container{
+        width: 1050px;
+    }
+    .homeDetails h1{
+        font-size: 38px;
+    }
+    .homeDetails p{
+        font-size: 16px;
+    }
+    .homeBanner{
+        padding: 0px 165px;
+    }
+    .FunBanner{
+        padding: 0px 165px;
+    }
+    .screenshot{
+        padding: 0px 35px;
+    }
+}
+
+@media only screen and (max-width : 1060px) {
+    .container{
+        width: 900px;
+    }
+    .homeDetails h1{
+        font-size: 31px;
+    }
+    .homeBanner{
+        padding: 0px 135px;
+    }
+    .screenshot{
+        padding: 0px 40px;
+    }
+    .footerDetails{
+        grid-gap: 70px;
+    }
+    .FunBanner{
+        padding: 0px 135px;
+    }
+}
+
+@media only screen and (max-width : 920px) {
+    .container{
+        width: 790px;
+    }
+    .NavItems ul li{
+        margin-left: 15px;
+    }
+    .homeDetails h1{
+        font-size: 28px;
+    }
+    .homeBanner{
+        padding: 0px 110px;
+    }
+    .features{
+        grid-gap: 20px;
+    }
+    .FunBanner{
+        padding: 0px 95px;
+    }
+    .activities{
+        grid-gap: 20px;
+    }
+    .screenshot{
+        padding: 0px 25px;
+    }
+    .perSystem h3{
+        font-size: 15px;
+    }
+    .perSystem p{
+        font-size: 14px;
+    }
+    .WorkingSerial p{
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width : 800px) {
+    .container{
+        width: 650px;
+    }
+    .NavItems ul{
+        visibility: hidden;
+    }
+    .homeDetails h1{
+        font-size: 23px;
+    }
+    .homeBanner{
+        padding: 0px 85px;
+    }
+    .homeDetails p{
+        font-size: 15px;
+    }
+    .buttonCommonDesign{
+        padding: 10px 20px;
+    }
+    .feature{
+        padding: 13px;
+    }
+    .feature p{
+        font-size: 14px;
+    }
+    .FunBanner{
+        padding: 0px 65px;
+    }
+    .FunDetails p{
+        font-size: 14px;
+    }
+    .activitiesBox h3{
+        font-size: 25px;
+    }
+    .activitiesBox p{
+        font-size: 11px;
+    }
+    .activities{
+        grid-gap: 15px;
+    }
+    .screenshot{
+        padding: 0px 10px;
+    }
+    .option{
+        padding: 10px;
+    }
+    .option p{
+        font-size: 14px;
+    }
+    .perSystem{
+        padding: 5px;
+    }
+    .priceBoxes{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footerDetails{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 13px;
+    }    
+}
+
+@media only screen and (max-width : 670px) {
+    .container{
+        width: 530px;
+    }
+    .homeDetails h1{
+        font-size: 19px;
+    }
+    .homeDetails p{
+        font-size: 13px;
+    }
+    .buttonCommonDesign{
+        padding: 10px 15px;
+        margin-right: 15px;
+    }
+    .homeBanner{
+        padding: 0px 60px;
+    }
+    .feature p{
+        font-size: 12px;
+    }
+    .features{
+        grid-gap: 15px;
+    }
+    .activities{
+        grid-gap: 10px;
+    }
+    .FunBanner{
+        padding: 0px 50px;
+    }
+    .screenshorts{
+        grid-gap: 10px;
+    }
+    .DownloadOptions{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .workingSystem{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .buttonDesign{
+        padding: 10px 15px;
+    }
+    .footerDetails{
+        grid-gap: 21px;
+    }
+    p#copyrightClame{
+        padding: 15px 0px;
+    }
+}
+@media only screen and (max-width : 550px) {
+    .container{
+        width: 400px;
+    }
+    .homeDetails{
+        order: 2;
+    }
+    .home{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .homeBanner{
+        padding: 0px 100px;
+    }
+    .homeDetails h1{
+        font-size: 29px;
+    }
+    .homeDetails p{
+        font-size: 16px;
+    }
+    .features{
+        grid-template-columns: repeat(2, 1fr);  
+    }
+    .Fun{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px; 
+    }
+    .FunBanner{
+        font-size: 0px 100px;
+        grid-gap: 20px;
+    }
+    .screenshorts {
+        grid-gap: 0px;
+    }
+    .option h3{
+        font-size: 22px;
+    }
+    .workingSystem{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .priceBoxes{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .GetInTouch{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footerDetails{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width : 420px) {
+    .container{
+        width: 300px;
+    }
+    .homeBanner{
+        padding: 0px 30px;
+    }
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .screenshorts{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .DownloadOptions{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .workingSystem{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footerDetails{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footerInfo{
+        text-align: center;
+    }
+}
+@media only screen and (max-width : 310px) {
+    .container{
+        width: 270px;
+    }
+    .GetInTouch{
+        grid-gap: 20px;
+    }
+    .homeBanner{
+        padding: 0px 65px;
+    }
+}
